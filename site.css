@@ -1,3 +1,6 @@
 div .special {
     color: red;
 }
+.card.selected {
+    background-color: #eee;
+}
