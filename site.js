@@ -11,4 +11,8 @@ $.when($.ready).then(function() {
     $('.card button.select').click(function(){
         $(this).parents('.card').toggleClass('selected');
     });
+
+    $('button.view').click(function(){
+        $('#dynamic').text($('.card.selected p').text());
+    });
 });
