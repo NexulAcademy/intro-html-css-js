@@ -6,8 +6,12 @@
     <!-- last order wins for 'equal specificity' rules -->
 
     <script>
-        var elem = document.getElementById('dynamic');
-        console.log(elem);
+        window.onload = function () {
+            var elem = document.getElementById('dynamic');
+
+            console.log(elem);
+            elem.innerText = 'dynamic content';
+        }
     </script>
 </head>
 
