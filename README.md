@@ -12,3 +12,9 @@ https://getbootstrap.com/docs/4.0/components/card/
 
 jQuery documentation : parents() function
 https://api.jquery.com/parents/
+
+
+## Presentation Survey
+If you've watched the presentation, please let us know what you think:
+
+https://nexulacademy.typeform.com/to/ArpufM
