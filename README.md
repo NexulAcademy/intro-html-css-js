@@ -110,31 +110,51 @@ Compare your answer to commit ['Step011'](https://github.com/NexulAcademy/intro-
 
 ## Step 12: Grabbing elements from JavaScript
 
-A common task in JavaScript is to grab an element and do something with it.  You can do this with the 'document.getElementById()' function.  Give a new element on the page html with id of 'dynamic', then using JavaScript grab it and write it the the debug console.
+A common task in JavaScript is to grab an element and do something with it.  You can do this with the 'document.getElementById()' function.  Create a new element in the html with id of 'dynamic', then using JavaScript grab it and write it the the debug console.
 
 Compare your answer to commit ['Step012'](https://github.com/NexulAcademy/intro-html-css-js/commit/b887f1a9aa4ed3edff3627e5d7d98953db5a8041) and ['Step012b](https://github.com/NexulAcademy/intro-html-css-js/commit/e1613f781ad2fbb962872227f288c4cbcb5e8c5f).
 
 ## Step 13: Defering execution until Html is loaded
 
+If you run the last step in the browser you will notice no element is written to the console. JavaScript runs immediately when parsed by the browser, even before the entire page has finished loading.  So script at the head of the document runs before the body exists, resulting in no element found.
+
+Moving script to the end of the body could be one solution, but it doesn't necassarily guarantee the browser has finished rendering all that was downloaded before the JavaScript compiles.
+
+A better solution is to still run code immediately, but the code should instead register with the load event of the page to defer execution of the element selection logic until the document is downloaded, parsed and ready to use.  The browser DOM supplied an event called "window.onload" for this purpose.  Implement the event and move the element selection logic inside the event block.
+
 Compare your answer to commit ['Step013'](https://github.com/NexulAcademy/intro-html-css-js/commit/5763a16882e44eb76ecf109dec7d84473424188a).
 
 ## Step 14: JavaScript moved to separate file
 
-Compare your answer to commit ['Step014'](https://github.com/NexulAcademy/intro-html-css-js/commit/d42b6e7b28d4e78880cdf407fe638436a7b7b528).
+You can move JavaScript to an external file, similarly to CSS. However scripts are imported using a different tag, called 'script'
+
+    <script src="..."></script>
+    
+Move the script into a separate file in the same folder as the html file. Compare your answer to commit ['Step014'](https://github.com/NexulAcademy/intro-html-css-js/commit/d42b6e7b28d4e78880cdf407fe638436a7b7b528).
 
 ## Step 15: JavaScript simplified with jQuery
 
-Compare your answer to commit ['Step015'](https://github.com/NexulAcademy/intro-html-css-js/commit/9e4fcfbbcc472ecdb33d74c1905d9ce64cd07d99).
+Browsers have some common standards, but vary their JavaScript DOM API functions, sometimes minimally and sometimes greatly.  jQuery was created to avoid writing custom code for each browser. Download the jQuery library from the resources section below and place the main script file in the same folder as your html file.  You can also get the copy used in this course from this repo.
+
+Import the jQuery script file into the HTML file using the same technique as the last step. Compare your answer to commit ['Step015'](https://github.com/NexulAcademy/intro-html-css-js/commit/9e4fcfbbcc472ecdb33d74c1905d9ce64cd07d99).
 
 ## Step 16: Changing a card when selected (jQuery, CSS)
 
-Refer to the jQuery documentation link in the Resources section below for help using  DOM navigation capabilities.
+Let's differentiate cards that are selected from those that are not using some CSS.  Add the 'selected' class to one card and then create some CSS to style it with a different 'background-color'.  Once complete, remove the hard-coded 'selected' class from the card.
+
+Now write some logic using jQuery to handle when a 'select' button is pressed on the card. The 'click' event logic should toggle the 'selected' class on the parent card. Refer to the jQuery documentation link in the Resources section below for help using  DOM navigation capabilities. You can also find help on handling the 'click' event from the same website.
 
 Compare your answer to commit ['Step016'](https://github.com/NexulAcademy/intro-html-css-js/commit/4410b9e29b0e775d7517bd148bc69469e6984b5f).
 
-## Step 17: Using user Click events
+## Step 17: Modifying page content dynamically
+
+jQuery offers helpful functions to change the content of any element on a page.  Update a button on either a card or anywhere on the page, so that when clicked another section of the page shows a copy of the text content in all the selected cards. You can get or set the text content of any other element using the 'text()' function. Refer to the same jQuery docs to find details on the function.
 
 Compare your answer to commit ['Step017'](https://github.com/NexulAcademy/intro-html-css-js/commit/12d8ef75e555d49179185d6e2ddd6398fd26af54).
+
+# Summary
+
+This walkthrough demonstrated the basics of HTML, CSS, and getting started with JavaScript.  Learn what else you can do by perusing the jQuery documentation and try to use what you've learned to make an application that solves a problem interesting to you.
 
 # Resources
 These resources will help while implementing steps in this walkthrough.
