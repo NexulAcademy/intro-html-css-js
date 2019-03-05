@@ -171,7 +171,7 @@ You can call a function simply by calling its name.
 var result = concat('hello', ' from', ' JavaScript');
 console.log(result); //this line just outputs it to the console for you, the developer to see
 
-Now create a function to updates an element to contain a paragraph with some specific text. Then call that new function from the code in the prior steps.  Compare your answer to commit ['Step018']().
+Now create a function to updates an element to contain a paragraph with some specific text. Then call that new function from the code in the prior steps.  Compare your answer to commit ['Step018'](https://github.com/NexulAcademy/intro-html-css-js/commit/10f176b02710df10fc407f0ac1b38171f9184cda).
 
 # Summary
 
