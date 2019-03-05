@@ -152,6 +152,27 @@ jQuery offers helpful functions to change the content of any element on a page. 
 
 Compare your answer to commit ['Step017'](https://github.com/NexulAcademy/intro-html-css-js/commit/12d8ef75e555d49179185d6e2ddd6398fd26af54).
 
+## Step 18: Defining your own functions
+
+Sometimes you may need to use the same logic repeatedly in an application. But writing that duplicate code over and over leads to mistakes.  Will you update all copies if a change is needed? To solve this problem you can wrap the logic in a function that optionally accepts parameters, performs an action, and optionally returns a result.
+
+// a very simple function that shows an alert box, takes no parameters and returns nothing.
+function sayHi() {
+    alert('hi);
+}
+
+// function that concatenates some strings together and returns the result to the caller
+function concat(a, b, c) {
+    return a + b + c;
+}
+
+You can call a function simply by calling its name.
+
+var result = concat('hello', ' from', ' JavaScript');
+console.log(result); //this line just outputs it to the console for you, the developer to see
+
+Now create a function to updates an element to contain a paragraph with some specific text. Then call that new function from the code in the prior steps.  Compare your answer to commit ['Step018']().
+
 # Summary
 
 This walkthrough demonstrated the basics of HTML, CSS, and getting started with JavaScript.  Learn what else you can do by perusing the jQuery documentation and try to use what you've learned to make an application that solves a problem interesting to you.

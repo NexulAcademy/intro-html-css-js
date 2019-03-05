@@ -1,13 +1,18 @@
-// window.onload = function () {
-//     var elem = document.getElementById('dynamic');
+var myText = 'Hello from JavaScript';
 
-//     console.log(elem);
-//     elem.innerText = 'dynamic content';
-// }
+// a standard JavaScript function
+function updateElement(id, text) {
+    var elem = document.getElementById(id);
+    elem.innerHTML = '<p>' + text + '</p>';
+    console.log('elem:', elem);
+}
 
+// using jQuery ...
 $.when($.ready).then(function() {
-    $('#dynamic').text('dynamic content');
-    //console.log($('#dynamic'));
+    //1. arbitrary content update
+    updateElement('dynamic', myText);
+
+    //2. setup some event handlers for user interaction
     $('.card button.select').click(function(){
         $(this).parents('.card').toggleClass('selected');
     });
@@ -16,3 +21,16 @@ $.when($.ready).then(function() {
         $('#dynamic').text($('.card.selected p').text());
     });
 });
+
+
+
+// comparison code - without jquery - not 100% equivalent (ask why!)
+// window.onload = function () {
+//     var elem = document.getElementById('dynamic');
+
+//     console.log(elem);
+//     elem.innerText = myText;
+
+//      //or this way
+//     updateElement('dynamic', myText);
+// }
