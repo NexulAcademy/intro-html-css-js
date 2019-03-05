@@ -74,7 +74,7 @@ Adding numerous styles to an html document can lead to harder to maintain code a
 
 Import css into an html file using the style tag in the document header.
 
-    <style rel="stylesheet" href="...">
+    <link rel="stylesheet" href="...">
 
 Compare your answer to commit ['Step007'](https://github.com/NexulAcademy/intro-html-css-js/commit/d15cf4fe604dc721f6fbee3409a7dfcaacf22055).
 
