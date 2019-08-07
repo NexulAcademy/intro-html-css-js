@@ -72,7 +72,7 @@ Using a combination of these selector types can conflict with one another. If mu
 
 Adding numerous styles to an html document can lead to harder to maintain code and prevents sharing the same style code between html pages.  Style is preferably defined in separate CSS files and then referenced by the HTML file. Create a file with the '.css' extension in the same folder as the html file.
 
-Import css into an html file using the style tag in the document header.
+Import css into an html file using the link tag in the document header.
 
     <link rel="stylesheet" href="...">
 
