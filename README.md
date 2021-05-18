@@ -1,3 +1,7 @@
+This repository is ARCHIVED. More up to date and organized content can be found here:
+
+https://www.nexulacademy.com/courseware/html-css-introduction
+
 # intro-html-css-js
 Introductory presentation project to learn some Html, CSS, and JavaScript
 
